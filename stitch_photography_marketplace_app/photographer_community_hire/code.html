@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#4d4635", "secondary-fixed": "#ffe087", "text-secondary": "#9CA3AF", "background": "#11131a", "on-tertiary": "#412d00", "status-warning": "#F59E0B", "primary-container": "#d4af37", "on-secondary-fixed": "#231b00", "tertiary-fixed": "#ffdea6", "secondary": "#e1c46e", "on-tertiary-fixed": "#271900", "text-primary": "#F4F5F7", "surface-canvas": "#0B0C10", "inverse-primary": "#735c00", "border-gold-glow": "rgba(212, 175, 55, 0.35)", "status-success": "#10B981", "primary": "#f2ca50", "secondary-fixed-dim": "#e1c46e", "surface-card": "#14161D", "on-error": "#690005", "surface-container": "#1d1f27", "tertiary-fixed-dim": "#f4be53", "status-error": "#EF4444", "on-tertiary-fixed-variant": "#5e4200", "on-background": "#e2e2ec", "on-surface-variant": "#d0c5af", "border-subtle": "#282C3D", "on-primary-container": "#554300", "on-secondary": "#3c2f00", "on-secondary-container": "#e1c46e", "on-tertiary-container": "#5b4000", "on-primary-fixed-variant": "#574500", "on-primary-fixed": "#241a00", "surface-tint": "#e9c349", "inverse-surface": "#e2e2ec", "primary-fixed": "#ffe088", "secondary-container": "#655000", "tertiary-container": "#deaa41", "surface-container-lowest": "#0c0e15", "surface-elevated": "#1C1F2B", "tertiary": "#fdc659", "surface-variant": "#33343c", "error": "#ffb4ab", "surface-container-low": "#191b22", "inverse-on-surface": "#2e3038", "on-primary": "#3c2f00", "on-secondary-fixed-variant": "#574500", "outline": "#99907c", "on-error-container": "#ffdad6", "error-container": "#93000a", "on-surface": "#e2e2ec", "text-gold": "#F5D77F", "primary-fixed-dim": "#e9c349", "surface-container-high": "#282a31", "surface": "#11131a", "surface-bright": "#373941", "surface-dim": "#11131a", "surface-container-highest": "#33343c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-2xl": "4rem", "space-lg": "1.5rem" }, fontFamily: { "label-mono": ["JetBrains Mono"], "body-sm": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "label-mono": ["11px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "display": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100vw; min-height: 100%; margin: 0; padding: 0; background-color: #0c0e15; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface-container-lowest text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-surface-elevated shadow-[0_0_12px_rgba(212,175,55,0.15)]"><span class="material-symbols-outlined text-primary text-xl">camera</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight leading-none">Aperture<span class="text-primary">Tube</span></span></div><span class="font-label-mono text-label-mono text-text-gold tracking-widest uppercase opacity-80 mt-0.5">Capturing Memories</span></div></div><div class="flex items-center gap-space-xs"><span class="hidden font-label-md text-label-md text-on-surface-variant font-medium tracking-wide">Community</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_8px_rgba(212,175,55,0.25)]" src="https://lh3.googleusercontent.com/aida/AEtjO1W2d40aK4i2E3OdQabT3q2MX50QbYaBikw3sAiiNICxgg5kC9Q_9BFpBK5phvLLC2Ds0r2o0yI0_gYhzO9H2dQTP807oFA_V6cAhVfPk6AR1nOlU_dHgWuog7jbVj45B3DrmJ1LVtFB9_ujFQ_2Qs1tggkQ5gDCtFA-vN-LwjLqob6tt3QJFr2HHS8viGp25fiSeXQNonm8-mhL5iR73VrkyDsgFq0-eja2qRX2lTbatHOT58mTs1AaMfltDpZDVZqAlMjI6lyBgg"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface-container-lowest"><div class="flex flex-col w-full pb-8">
+<!-- Search & Filter Ribbon -->
+<div class="px-margin-mobile pt-3 pb-2 flex flex-col gap-space-sm">
+<div class="relative flex items-center w-full">
+<span class="material-symbols-outlined absolute left-3 text-text-secondary text-[20px] pointer-events-none">search</span>
+<input class="w-full h-11 pl-10 pr-10 rounded-xl bg-surface-card text-text-primary placeholder:text-text-secondary/60 font-body-md text-body-sm focus:outline-none focus:bg-surface-elevated transition-colors duration-200" placeholder="Search master cinematographers, gigs, or gear..." type="text"/>
+<button aria-label="Filters" class="absolute right-2.5 w-7 h-7 rounded-lg bg-surface-elevated flex items-center justify-center text-text-gold active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Discipline Filter Chips -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<button class="chip-filter px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-mono text-label-mono font-bold tracking-wider uppercase whitespace-nowrap shadow-sm shadow-primary/20">All</button>
+<button class="chip-filter px-3.5 py-1.5 rounded-full bg-surface-card text-text-secondary font-label-mono text-label-mono tracking-wider uppercase whitespace-nowrap active:bg-surface-elevated">Wedding</button>
+<button class="chip-filter px-3.5 py-1.5 rounded-full bg-surface-card text-text-secondary font-label-mono text-label-mono tracking-wider uppercase whitespace-nowrap active:bg-surface-elevated">Editorial</button>
+<button class="chip-filter px-3.5 py-1.5 rounded-full bg-surface-card text-text-secondary font-label-mono text-label-mono tracking-wider uppercase whitespace-nowrap active:bg-surface-elevated">Drone</button>
+<button class="chip-filter px-3.5 py-1.5 rounded-full bg-surface-card text-text-secondary font-label-mono text-label-mono tracking-wider uppercase whitespace-nowrap active:bg-surface-elevated">Macro</button>
+<button class="chip-filter px-3.5 py-1.5 rounded-full bg-surface-card text-text-secondary font-label-mono text-label-mono tracking-wider uppercase whitespace-nowrap active:bg-surface-elevated">Commercial</button>
+</div>
+</div>
+<!-- Curated Showcase Spotlight Banner -->
+<div class="px-margin-mobile my-2">
+<div class="relative overflow-hidden rounded-xl bg-surface-card p-4 flex flex-col justify-between shadow-xl">
+<!-- Background Ambient Glow & Aperture Vector Motif -->
+<div class="absolute -right-8 -top-8 w-44 h-44 rounded-full bg-primary/10 blur-2xl pointer-events-none"></div>
+<div class="absolute right-2 bottom-1 opacity-15 pointer-events-none">
+<svg class="text-primary" fill="none" height="120" viewbox="0 0 100 100" width="120">
+<circle cx="50" cy="50" r="46" stroke="currentColor" stroke-dasharray="3 3" stroke-width="1.5"></circle>
+<path d="M50 15 L78 30 L65 65 L28 65 L20 35 Z" fill="none" stroke="currentColor" stroke-width="1.5"></path>
+<circle cx="50" cy="50" r="16" stroke="currentColor" stroke-width="2"></circle>
+</svg>
+</div>
+<div class="relative z-10 flex flex-col gap-1.5 max-w-[80%]">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-label-mono text-label-mono text-primary font-bold uppercase tracking-widest">Guild Spotlight</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight">Capturing Memories</h2>
+<p class="font-body-sm text-body-sm text-text-secondary leading-relaxed">Book elite visual storytellers worldwide with escrow protection and RAW color grading pipeline.</p>
+</div>
+<div class="relative z-10 flex items-center justify-between mt-3 pt-3">
+<div class="flex items-center -space-x-2">
+<img class="w-7 h-7 rounded-full object-cover bg-surface-elevated" data-alt="Close-up portrait of an experienced male fashion photographer with stylish dark glasses and camera strap on dark studio background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKw9w8iXNYs7K_4ps0DRCAXonWzGi-zystVpq4ng13D1XxxrxfNQQRSQYypKrS3E0-xkWSI7e-HAXhnZYD42_vUJjCiue0RmW5BGycnIN23-2d9o0dwBr01icxGVHO6VThPuDcy0mW4U-kBCcX8mX6Q2zJCvt82ZaN1wMebpU2tRVkKNud3D4MKYCQsF4eliX_F-s_o7bKKP3Mw3hvqC-xBuS8_Z6jVHs4-oDZQiIl99oO2_1SVYPy"/>
+<img class="w-7 h-7 rounded-full object-cover bg-surface-elevated" data-alt="Portrait of an aesthetic female filmmaker looking through viewfinder with warm ambient golden lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB_naCn2KyeVzS-iQCjwgX5TquEB09BivK6fiVQv7M7tgqMzwWclbW8KZp_Nc36P57LKYhiD1mbfZY_crwyCk88xiZuhTF-0jgcGrlk_cRb1ptLrwC5-KPWaWY66b6xiK8MK5TRXo2V6CUmr6e8xQIg0y69eCOj3BCaoOiMKk5Z1PPubnVjvxpd4Fm7RHiEvmR-cridS5Ve1RHgvGrTJmgNQeHTiG1tSwva2m8kfQx59jG3gp1sfsWH"/>
+<img class="w-7 h-7 rounded-full object-cover bg-surface-elevated" data-alt="Portrait of an urban drone pilot in techwear outdoors holding controller against city sunset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQ_-t6CqEl0Q0NiLbQ_ueg5ySA2U8SWxR2KbZjYkmm0GFm5PBZMSg4QlaYARz9UfY3AnL5oZLFuKvAUnqW4WA86Huy-71RNFN5ZFI9KuM3VJ_seYe9hGUba0BBxOyyr358cAntdmvYOWG0nvrSmXehDv6Dm2Cfhf0sjnShMPgF-xgvdKT2puSdrAfwUAGsf2Sug3gCh0qdWjd9VUTgH35JUI09IUgLE6ZJti6oPy-nLTlmO63iJ1KH"/>
+<span class="w-7 h-7 rounded-full bg-surface-elevated flex items-center justify-center font-label-mono text-label-mono text-text-gold font-bold">+48</span>
+</div>
+<div class="flex items-center gap-1 font-label-md text-label-md text-primary font-semibold">
+<span>Top Rated</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Featured Artisans Section -->
+<div class="px-margin-mobile mt-4 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 rounded-full bg-primary"></span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Featured Artisans</h3>
+</div>
+<span class="font-label-mono text-label-mono text-text-gold uppercase tracking-wider">3 Verified Online</span>
+</div>
+<!-- Artisans Vertical Feed -->
+<div class="px-margin-mobile mt-3 flex flex-col gap-4">
+<!-- Artisan 1: Tahsin Rahman -->
+<div class="rounded-xl bg-surface-card overflow-hidden shadow-lg flex flex-col">
+<!-- Image Carousel / Card Header -->
+<div class="relative w-full h-52 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Cinematic luxury wedding photography of an elegant South Asian couple during golden hour with warm sunset glow and soft bokeh" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTGZ7uNUZtDneGtBKvXVIwhtXINg3M1eGtn0ggI53LlxbO4GtHiIB3QcuJ_GcbYrVNSM6EYj8OWz6r3Wf-6b_0B-1iXqaXlMrAsMKRCRAzbYCLzQHQvkYNQBgNTSKKuAQlUSbsOVx4msn9r579r9eVlJR9R1wKDCGON8kS7jV_q9RCFE2jLDWTGVVWEZppnlXg3YT7s0MfXzkoXshMdOEIfbFckqvjE4GVNnZ-leBSCwxNMjprYfOq"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/20 to-transparent"></div>
+<!-- Top Metadata Overlay -->
+<div class="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-mono text-label-mono text-status-success font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span> Available This Week
+          </span>
+<button aria-label="Bookmark" class="w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-md text-text-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<!-- Artisan Header Float -->
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover bg-surface-elevated" data-alt="Profile headshot portrait of cinematographer Tahsin Rahman holding modern cinema rig in ambient low light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCgJNwpYdqRETYmJHFJ2iXsIoMHhSSKBWkmyh0q5-s3TyzEOg_Ds1aCohUYqVzU1xciEtOdLw3-yIPoEzAewufP8K-aJM0Gf6CWxgNEtF3_dmpIIDkg12Z-v9tZCQ_ZZEjl7Co7OqdQTejhCjdeY-Uen8qVn_DcJFHeHSHi4gXQt37qHdsHb-zaP6cQfuBWevR4i7hDz55pezA-awZe_YHJgZEH9_8LALcGOxrRANAuIDlFlHy5ewbd"/>
+<div class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-surface-card flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">Tahsin Rahman</h4>
+<span class="material-symbols-outlined text-primary text-[16px]">stars</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Wedding &amp; Cinematography</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-mono text-label-mono text-text-gold font-bold">৳24,000<span class="text-text-secondary font-normal">/hr</span></div>
+<div class="flex items-center justify-end gap-1 text-status-warning font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-text-primary font-bold">4.98</span>
+<span class="text-text-secondary font-normal">(84)</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Artisan Body & Tech Specs -->
+<div class="p-3.5 flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-md text-label-md text-text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-text-gold">location_on</span> Dhaka &amp; Dubai
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">videocam</span> 4K ProRes RAW
+          </span>
+</div>
+<!-- Gear Stack Badges -->
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">Sony A7IV</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">Sony FX6 Cinema</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">G-Master 24-70 f/2.8</span>
+</div>
+<!-- CTA Cluster -->
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="w-full h-10 rounded-xl bg-surface-elevated text-text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">collections</span> Portfolio
+          </button>
+<button class="w-full h-10 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 active:opacity-90 transition-opacity shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span> Hire / Book
+          </button>
+</div>
+</div>
+</div>
+<!-- Artisan 2: Sarah Jenkins -->
+<div class="rounded-xl bg-surface-card overflow-hidden shadow-lg flex flex-col">
+<div class="relative w-full h-52 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="High fashion editorial runway model wearing sharp geometric haute couture attire bathed in dramatic rim lighting against dark background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIB-39kB42cqvjh4eWFrgECGURdfay-mDx-WMNKbKxexyyD9lCsTR53abDBvtPATF-vWLT1nS4BoIJb-GLlCAC-gh3xoycldTP3YX6gPl3nFry_zFTpuCUFaI-7gj1ayAgANxHA4CbDsmB6jknmoQJA1FyLDwKnjQtrP8q-PWl-mLZmmZd51Ca-E7xXY7KgLcQv0_nNddOyiDCVqePGVPOwi3UyC9j4oLyG6RKKCMkieUgqf4nufoc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-mono text-label-mono text-text-gold font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span> Vogue Contributor
+          </span>
+<button aria-label="Bookmark" class="w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-md text-text-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover bg-surface-elevated" data-alt="Professional studio portrait of high fashion female photographer Sarah Jenkins in minimalist black attire" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2DqwSCauRbNaPGym3NjQjLmIK7zuuPEjN5zUKENdMkycX8tu7HZPS9Fw-387QP3ZCHtec50zkGW9LM64Nxl4RwfaFQ1m9UKQKYNSmmaq8FQ6AJNdYS1sc79a-XFk5HQX1fhNv2Fy6GZukupacGBX6NxljujG9ysbDu8nNtS3pvNl2TyFAYEtLk_ErI6hMDpNX53D2ID_bk0yLl7bCnrvV8Kn-nUqmGw06OKRjcA-1NWVWwbZbMKb7"/>
+<div class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-surface-card flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">Sarah Jenkins</h4>
+<span class="material-symbols-outlined text-primary text-[16px]">stars</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Haute Couture &amp; Runway</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-mono text-label-mono text-text-gold font-bold">£1,450<span class="text-text-secondary font-normal">/day</span></div>
+<div class="flex items-center justify-end gap-1 text-status-warning font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-text-primary font-bold">5.0</span>
+<span class="text-text-secondary font-normal">(112)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-md text-label-md text-text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-text-gold">location_on</span> London &amp; Paris
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">photo_camera</span> 100MP Medium Format
+          </span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">Hasselblad X2D 100C</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">XCD 55mm f/2.5</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">Profoto B10X</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="w-full h-10 rounded-xl bg-surface-elevated text-text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">collections</span> Portfolio
+          </button>
+<button class="w-full h-10 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 active:opacity-90 transition-opacity shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span> Hire / Book
+          </button>
+</div>
+</div>
+</div>
+<!-- Artisan 3: Zayan Al-Mansoor -->
+<div class="rounded-xl bg-surface-card overflow-hidden shadow-lg flex flex-col">
+<div class="relative w-full h-52 bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Dramatic aerial cinematic photograph of futuristic glass skyscrapers in Dubai piercing morning fog with golden sunrise light reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDL2G3yCY7Dn51WjlM7pGgg307uEd55ajwvcMFZGrbiiN8Y82geyDDAziIIRCXXoLa6o3eiYQ_0r1KDj3gmVux-BZfzmAUB92nxNfXv47yd9mXF32nt0pW0Ts2j4Zd1o2ohySNlOau6SWMMSgU1XvSxQME7G8yDja8w38Jakhy3YWMloFAlC19h3zQ7Jmrk6CkQc8Hce1vTUbEYJx01pY0syumSTqIOHhKRirGPT34Om22UbsF1em0c"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/20 to-transparent"></div>
+<div class="absolute top-2.5 left-2.5 right-2.5 flex items-center justify-between">
+<span class="px-2.5 py-1 rounded-full bg-surface-container-lowest/80 backdrop-blur-md font-label-mono text-label-mono text-status-success font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success animate-pulse"></span> GCAA Certified Pilot
+          </span>
+<button aria-label="Bookmark" class="w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-md text-text-primary flex items-center justify-center active:scale-90 transition-transform">
+<span class="material-symbols-outlined text-[18px]">bookmark</span>
+</button>
+</div>
+<div class="absolute bottom-2.5 left-3 right-3 flex items-end justify-between">
+<div class="flex items-center gap-2.5">
+<div class="relative">
+<img class="w-11 h-11 rounded-full object-cover bg-surface-elevated" data-alt="Profile headshot portrait of aerial filmmaker Zayan Al-Mansoor wearing sunglasses in the desert with aviation headset" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAfMJ2f4xFunUcJkgoUsoKtmqpn316xR7NMWlqZakR03vMhblOcQsHAdwtAqbP9GIzMz5lcTHHxSrlDcxLtStbcRUlPblanR2Zsl7JKH_azVKz0sh1-IxSRPm5lnbupY1kRCf2EhRIoaaj3QAHXM9nUiheSk5CuQvbPGvfGHCis5myvZZIscgaO4cZR7SgOYRioQUdeqjfWMb4x3ZWvhP6Wrmyws8aGbaWhVHDfEAVt6b2egbZ44IQE"/>
+<div class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 rounded-full bg-surface-card flex items-center justify-center">
+<span class="w-2.5 h-2.5 rounded-full bg-primary"></span>
+</div>
+</div>
+<div>
+<div class="flex items-center gap-1.5">
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold">Zayan Al-Mansoor</h4>
+<span class="material-symbols-outlined text-primary text-[16px]">stars</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Cinema Drone Pilot</p>
+</div>
+</div>
+<div class="text-right">
+<div class="font-label-mono text-label-mono text-text-gold font-bold">AED 3,200<span class="text-text-secondary font-normal">/day</span></div>
+<div class="flex items-center justify-end gap-1 text-status-warning font-label-md text-label-md">
+<span class="material-symbols-outlined text-[14px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="text-text-primary font-bold">4.95</span>
+<span class="text-text-secondary font-normal">(63)</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-3.5 flex flex-col gap-3">
+<div class="flex items-center justify-between font-label-md text-label-md text-text-secondary">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-text-gold">location_on</span> Dubai &amp; Abu Dhabi
+          </span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-primary">flight</span> 8K CinemaDNG Aerial
+          </span>
+</div>
+<div class="flex items-center gap-1.5 flex-wrap">
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">DJI Inspire 3</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">Zenmuse X9-8K Air</span>
+<span class="px-2 py-0.5 rounded-lg bg-surface-elevated text-on-surface-variant font-label-mono text-label-mono">Dual Operator Rig</span>
+</div>
+<div class="grid grid-cols-2 gap-2 mt-1">
+<button class="w-full h-10 rounded-xl bg-surface-elevated text-text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">collections</span> Portfolio
+          </button>
+<button class="w-full h-10 rounded-xl bg-primary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-1 active:opacity-90 transition-opacity shadow-md shadow-primary/20">
+<span class="material-symbols-outlined text-[18px]">calendar_today</span> Hire / Book
+          </button>
+</div>
+</div>
+</div>
+</div>
+<!-- Open Production Calls / Client RFPs Section -->
+<div class="px-margin-mobile mt-7 flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-1.5 h-4 rounded-full bg-secondary"></span>
+<h3 class="font-headline-sm text-headline-sm text-text-primary font-bold">Open Production RFPs</h3>
+</div>
+<span class="font-label-mono text-label-mono text-primary font-semibold">Live Bidding</span>
+</div>
+<div class="px-margin-mobile mt-3 flex flex-col gap-3">
+<!-- RFP Card 1 -->
+<div class="rounded-xl bg-surface-card p-3.5 flex flex-col gap-3 shadow-md">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary/10 text-primary font-label-mono text-label-mono font-bold uppercase">Wedding RFP</span>
+<span class="text-text-secondary font-label-mono text-label-mono">Closes in 18h</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold leading-snug">3-Day Royal Wedding Shoot in Chittagong</h4>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-mono text-label-mono text-text-secondary uppercase">Budget</span>
+<div class="font-headline-sm text-headline-sm text-text-gold font-bold">৳120,000</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+        Looking for primary cinematographer + 2 secondary camera ops with RED or FX6 bodies. 4K delivered with teaser reel in 48 hours. Accommodation provided.
+      </p>
+<div class="flex items-center justify-between pt-2 border-t border-border-subtle/40">
+<div class="flex items-center gap-1 text-text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-text-gold">pin_drop</span> Chittagong Club &amp; Resort
+        </div>
+<button class="px-4 py-2 rounded-lg bg-surface-elevated text-primary font-label-lg text-label-lg font-semibold flex items-center gap-1 active:bg-surface-variant transition-colors">
+<span>Apply with Reel</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+<!-- RFP Card 2 -->
+<div class="rounded-xl bg-surface-card p-3.5 flex flex-col gap-3 shadow-md">
+<div class="flex items-start justify-between gap-2">
+<div class="flex flex-col gap-1">
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-secondary/15 text-secondary font-label-mono text-label-mono font-bold uppercase">Commercial</span>
+<span class="text-text-secondary font-label-mono text-label-mono">Closes in 2d</span>
+</div>
+<h4 class="font-headline-sm text-headline-sm text-text-primary font-bold leading-snug">Luxury Chronograph Commercial (Mayfair)</h4>
+</div>
+<div class="text-right shrink-0">
+<span class="font-label-mono text-label-mono text-text-secondary uppercase">Budget</span>
+<div class="font-headline-sm text-headline-sm text-text-gold font-bold">£2,200</div>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">
+        Precision macro lens setup required (Laowa Probe or 100mm Macro) for Swiss mechanical watch campaign. Studio lighting mastery essential.
+      </p>
+<div class="flex items-center justify-between pt-2 border-t border-border-subtle/40">
+<div class="flex items-center gap-1 text-text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[16px] text-text-gold">pin_drop</span> London, W1
+        </div>
+<button class="px-4 py-2 rounded-lg bg-surface-elevated text-primary font-label-lg text-label-lg font-semibold flex items-center gap-1 active:bg-surface-variant transition-colors">
+<span>Apply with Reel</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Floating Action Button (FAB) -->
+<div class="fixed right-4 bottom-20 z-40">
+<button class="h-12 px-4 rounded-full bg-gradient-to-r from-primary to-primary-container text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-2 shadow-[0_4px_20px_rgba(212,175,55,0.4)] active:scale-95 transition-transform" id="fab-action">
+<span class="material-symbols-outlined text-[20px]">add_circle</span>
+<span>Post RFP / Call</span>
+</button>
+</div>
+</div>
+<script>
+  // Filter chips interactive toggle
+  document.querySelectorAll('.chip-filter').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('.chip-filter').forEach(b => {
+        b.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm', 'shadow-primary/20');
+        b.classList.add('bg-surface-card', 'text-text-secondary');
+      });
+      btn.classList.remove('bg-surface-card', 'text-text-secondary');
+      btn.classList.add('bg-primary', 'text-on-primary', 'shadow-sm', 'shadow-primary/20');
+    });
+  });
+
+  // Simple FAB micro-feedback
+  const fab = document.getElementById('fab-action');
+  if (fab) {
+    fab.addEventListener('click', () => {
+      const originalText = fab.innerHTML;
+      fab.innerHTML = '<span class="material-symbols-outlined text-[20px] animate-spin">refresh</span><span>Opening...</span>';
+      setTimeout(() => {
+        fab.innerHTML = originalText;
+      }, 700);
+    });
+  }
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-md text-label-md mt-0.5">Projects</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] transition-colors duration-200 text-primary" data-path="community" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-md text-label-md mt-0.5">Community</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="invoices" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-md text-label-md mt-0.5">Invoices</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-md text-label-md mt-0.5">Profile</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="client-portal" href="#"><span class="material-symbols-outlined text-[22px]">sensor_door</span><span class="font-label-md text-label-md mt-0.5">Portal</span></a></div></nav></body></html>

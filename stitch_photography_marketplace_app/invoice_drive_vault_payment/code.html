@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#4d4635", "secondary-fixed": "#ffe087", "text-secondary": "#9CA3AF", "background": "#11131a", "on-tertiary": "#412d00", "status-warning": "#F59E0B", "primary-container": "#d4af37", "on-secondary-fixed": "#231b00", "tertiary-fixed": "#ffdea6", "secondary": "#e1c46e", "on-tertiary-fixed": "#271900", "text-primary": "#F4F5F7", "surface-canvas": "#0B0C10", "inverse-primary": "#735c00", "border-gold-glow": "rgba(212, 175, 55, 0.35)", "status-success": "#10B981", "primary": "#f2ca50", "secondary-fixed-dim": "#e1c46e", "surface-card": "#14161D", "on-error": "#690005", "surface-container": "#1d1f27", "tertiary-fixed-dim": "#f4be53", "status-error": "#EF4444", "on-tertiary-fixed-variant": "#5e4200", "on-background": "#e2e2ec", "on-surface-variant": "#d0c5af", "border-subtle": "#282C3D", "on-primary-container": "#554300", "on-secondary": "#3c2f00", "on-secondary-container": "#e1c46e", "on-tertiary-container": "#5b4000", "on-primary-fixed-variant": "#574500", "on-primary-fixed": "#241a00", "surface-tint": "#e9c349", "inverse-surface": "#e2e2ec", "primary-fixed": "#ffe088", "secondary-container": "#655000", "tertiary-container": "#deaa41", "surface-container-lowest": "#0c0e15", "surface-elevated": "#1C1F2B", "tertiary": "#fdc659", "surface-variant": "#33343c", "error": "#ffb4ab", "surface-container-low": "#191b22", "inverse-on-surface": "#2e3038", "on-primary": "#3c2f00", "on-secondary-fixed-variant": "#574500", "outline": "#99907c", "on-error-container": "#ffdad6", "error-container": "#93000a", "on-surface": "#e2e2ec", "text-gold": "#F5D77F", "primary-fixed-dim": "#e9c349", "surface-container-high": "#282a31", "surface": "#11131a", "surface-bright": "#373941", "surface-dim": "#11131a", "surface-container-highest": "#33343c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-2xl": "4rem", "space-lg": "1.5rem" }, fontFamily: { "label-mono": ["JetBrains Mono"], "body-sm": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "label-mono": ["11px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "display": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100vw; min-height: 100%; margin: 0; padding: 0; background-color: #0c0e15; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface-container-lowest text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-surface-elevated shadow-[0_0_12px_rgba(212,175,55,0.15)]"><span class="material-symbols-outlined text-primary text-xl">camera</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight leading-none">Aperture<span class="text-primary">Tube</span></span></div><span class="font-label-mono text-label-mono text-text-gold tracking-widest uppercase opacity-80 mt-0.5">Capturing Memories</span></div></div><div class="flex items-center gap-space-xs"><span class="hidden font-label-md text-label-md text-on-surface-variant font-medium tracking-wide">Invoices</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_8px_rgba(212,175,55,0.25)]" src="https://lh3.googleusercontent.com/aida/AEtjO1W2d40aK4i2E3OdQabT3q2MX50QbYaBikw3sAiiNICxgg5kC9Q_9BFpBK5phvLLC2Ds0r2o0yI0_gYhzO9H2dQTP807oFA_V6cAhVfPk6AR1nOlU_dHgWuog7jbVj45B3DrmJ1LVtFB9_ujFQ_2Qs1tggkQ5gDCtFA-vN-LwjLqob6tt3QJFr2HHS8viGp25fiSeXQNonm8-mhL5iR73VrkyDsgFq0-eja2qRX2lTbatHOT58mTs1AaMfltDpZDVZqAlMjI6lyBgg"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface-container-lowest"><div class="flex flex-col w-full px-margin-mobile pb-8 space-y-space-md">
+<!-- Micro Invoice Breadcrumb & Status Ribbon -->
+<div class="flex items-center justify-between bg-surface-container/60 backdrop-blur-md px-3.5 py-2.5 rounded-xl mt-2">
+<div class="flex items-center space-x-2">
+<span class="inline-flex w-2 h-2 rounded-full bg-status-warning animate-pulse"></span>
+<span class="font-label-mono text-label-mono text-text-gold tracking-wider">ESCROW SECURED</span>
+<span class="font-label-mono text-label-mono text-text-secondary">#AT-2025-0891</span>
+</div>
+<div class="flex items-center space-x-1">
+<span class="material-symbols-outlined text-text-secondary text-[16px]">schedule</span>
+<span class="font-label-mono text-label-mono text-text-secondary">DUE NOV 12, 2025</span>
+</div>
+</div>
+<!-- Deliverables Vault Escrow Card with Animated Aperture Lock -->
+<div class="relative overflow-hidden rounded-xl bg-surface-elevated p-space-md shadow-xl">
+<!-- Atmospheric subtle gold gradient background -->
+<div class="absolute -top-16 -right-16 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-10 w-36 h-36 rounded-full bg-tertiary-container/10 blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col space-y-space-md">
+<div class="flex items-start justify-between">
+<div class="flex items-center space-x-3">
+<!-- Circular Aperture Stylized Lens Blade Icon -->
+<div class="relative w-12 h-12 rounded-full bg-surface-canvas flex items-center justify-center shadow-[0_0_16px_rgba(212,175,55,0.25)]">
+<svg class="w-8 h-8 text-primary transform hover:rotate-45 transition-transform duration-700" fill="currentColor" viewbox="0 0 100 100">
+<path d="M50 8 A42 42 0 0 1 85 28 L56 46 Z" opacity="0.95"></path>
+<path d="M85 28 A42 42 0 0 1 92 65 L60 54 Z" opacity="0.90"></path>
+<path d="M92 65 A42 42 0 0 1 65 92 L54 60 Z" opacity="0.85"></path>
+<path d="M65 92 A42 42 0 0 1 28 85 L46 56 Z" opacity="0.80"></path>
+<path d="M28 85 A42 42 0 0 1 8 50 L40 46 Z" opacity="0.90"></path>
+<path d="M8 50 A42 42 0 0 1 28 15 L44 40 Z" opacity="0.95"></path>
+<circle cx="50" cy="50" fill="#0B0C10" r="14"></circle>
+</svg>
+<span class="material-symbols-outlined absolute text-[16px] text-text-gold" style="font-variation-settings: 'FILL' 1;">lock</span>
+</div>
+<div>
+<div class="flex items-center space-x-1.5">
+<span class="font-headline-sm text-headline-sm text-text-primary tracking-tight">Vault Escrow</span>
+<span class="bg-surface-canvas text-text-gold font-label-mono text-label-mono px-2 py-0.5 rounded-full uppercase">Locked</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">Google Drive Vault Protection</p>
+</div>
+</div>
+<div class="px-2.5 py-1 rounded-full bg-surface-canvas/80 flex items-center space-x-1.5">
+<span class="material-symbols-outlined text-primary text-[14px]">cloud_sync</span>
+<span class="font-label-mono text-label-mono text-primary font-medium">128 GB RAW</span>
+</div>
+</div>
+<!-- Live Target Google Drive Container -->
+<div class="bg-surface-canvas/90 rounded-lg p-3 flex flex-col space-y-2">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2 truncate">
+<span class="material-symbols-outlined text-primary text-[18px]">add_to_drive</span>
+<span class="font-label-md text-label-md text-text-primary truncate">farhan.archive@gmail.com</span>
+</div>
+<span class="font-label-mono text-label-mono text-status-warning bg-status-warning/10 px-2 py-0.5 rounded">PENDING ESCROW</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-snug">
+          Unwatermarked 4K RAW photos and deliverables will be instantly unshielded to your Google Account upon payment verification.
+        </p>
+</div>
+<!-- Preview Image Scrim of Locked Session -->
+<div class="relative w-full h-24 rounded-lg overflow-hidden bg-surface-canvas">
+<div class="w-full h-full bg-cover bg-center filter blur-sm scale-105 opacity-40" data-alt="Cinematic high end wedding couple golden hour portrait illuminated by soft cinematic rim lighting, atmospheric depth, editorial camera color graded with warm tones and dark shadows" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBcBP5iLsfiuzvaSfxO-LJ3jY3wb8dBqfYK63b7rhgcqW5Jeo18X2svLV00pbHTkzeqd-tLIKZzMAey_SSKiErlO0Sa2SP-GL_wMbno5VJ4Rr9uyjBml6Rifz9p-84a02o87JqcTo2sOCk_bXe7B99JV3FdTzWHzKvFVeF_gbEkh0ZaJLXpL5f1PTycHxNyp4qDvxp6XdddKTUUV9ZCEJnB2Qg4EJZiqMGnYMk2e4lbYhRAw0glY_9p')"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-canvas via-surface-canvas/80 to-transparent flex items-center justify-between px-3">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-text-gold text-[20px]">encrypted</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md text-text-primary">1,420 High-Res Masters</span>
+<span class="font-label-mono text-label-mono text-text-secondary">DCI 4K &amp; 8K CineDNG</span>
+</div>
+</div>
+<span class="bg-surface-elevated/90 text-text-gold font-label-mono text-label-mono px-2 py-1 rounded">256-BIT AES</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Scannable Gateway QR Code Card -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-md flex items-center justify-between">
+<div class="flex flex-col space-y-1 pr-3">
+<div class="flex items-center space-x-1.5 text-text-gold">
+<span class="material-symbols-outlined text-[18px]">qr_code_scanner</span>
+<span class="font-label-md text-label-md font-semibold tracking-wide uppercase">Direct Mobile Pay</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary">
+        Scan via camera or digital wallet app for immediate Drive release.
+      </p>
+<div class="pt-1 flex items-center space-x-1">
+<span class="font-label-mono text-label-mono text-text-secondary">TOKEN:</span>
+<span class="font-label-mono text-label-mono text-primary font-bold">AT-891-XK94</span>
+</div>
+</div>
+<!-- Stylized Modern Geometric QR Representation -->
+<div class="flex-shrink-0 w-24 h-24 bg-surface-canvas rounded-lg p-2 flex flex-col justify-between shadow-inner relative group cursor-pointer">
+<div class="absolute inset-0 bg-primary/5 rounded-lg pointer-events-none"></div>
+<svg class="w-full h-full text-text-gold" fill="currentColor" viewbox="0 0 24 24">
+<path d="M2 2h7v7H2V2zm2 2v3h3V4H4zm9-2h7v7h-7V2zm2 2v3h3V4h-3zM2 13h7v7H2v-7zm2 2v3h3v-3H4zm11-2h2v2h-2v-2zm-2 2h2v2h-2v-2zm4 0h2v2h-2v-2zm-2 2h2v2h-2v-2zm2 2h2v2h-2v-2zm-6 0h2v2h-2v-2zm-2-2h2v2h-2v-2zm8-6h-2V7h2v2zm-2 2h-2V9h2v2z"></path>
+</svg>
+<div class="absolute inset-0 flex items-center justify-center bg-surface-canvas/60 backdrop-blur-[1px] opacity-0 group-hover:opacity-100 transition-opacity">
+<span class="material-symbols-outlined text-primary text-[20px]">zoom_in</span>
+</div>
+</div>
+</div>
+<!-- Deliverable Line Items Breakdown -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-md flex flex-col space-y-3">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px]">receipt</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Deliverables Breakdown</span>
+</div>
+<span class="font-label-mono text-label-mono text-text-secondary">5 ITEMS</span>
+</div>
+<div class="space-y-2.5">
+<!-- Item 1 -->
+<div class="flex items-start justify-between bg-surface-container-low/50 p-2.5 rounded-lg">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-text-primary">Full-Day Wedding Cinematography</span>
+<span class="font-body-sm text-body-sm text-text-secondary">4K DCI + Uncompressed RAW Footage (Dual Cams)</span>
+</div>
+<span class="font-label-mono text-label-mono text-text-primary font-semibold whitespace-nowrap">$1,150.00</span>
+</div>
+<!-- Item 2 -->
+<div class="flex items-start justify-between bg-surface-container-low/50 p-2.5 rounded-lg">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-text-primary">RAW Drone Aerial Reels</span>
+<span class="font-body-sm text-body-sm text-text-secondary">8K CineDNG Sequences • Certified Pilot Delivery</span>
+</div>
+<span class="font-label-mono text-label-mono text-text-primary font-semibold whitespace-nowrap">$350.00</span>
+</div>
+<!-- Item 3 -->
+<div class="flex items-start justify-between bg-surface-container-low/50 p-2.5 rounded-lg">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-text-primary">Master Retouching Package</span>
+<span class="font-body-sm text-body-sm text-text-secondary">150 Curated Hero Selections with High-Dynamic Grading</span>
+</div>
+<span class="font-label-mono text-label-mono text-text-primary font-semibold whitespace-nowrap">$200.00</span>
+</div>
+<!-- Item 4 -->
+<div class="flex items-start justify-between bg-surface-container-low/50 p-2.5 rounded-lg">
+<div class="flex flex-col pr-2">
+<span class="font-label-lg text-label-lg text-text-primary">Encrypted Cloud Vault &amp; Fast CDN</span>
+<span class="font-body-sm text-body-sm text-text-secondary">1 Year Redundant Archival &amp; Instant Google Drive API</span>
+</div>
+<span class="font-label-mono text-label-mono text-text-primary font-semibold whitespace-nowrap">$100.00</span>
+</div>
+<!-- Tax -->
+<div class="flex items-center justify-between px-2.5 py-1 text-text-secondary">
+<span class="font-body-sm text-body-sm">Standard Production Tax (5%)</span>
+<span class="font-label-mono text-label-mono">$90.00</span>
+</div>
+</div>
+<!-- Total Presentation -->
+<div class="bg-surface-canvas rounded-xl p-3.5 flex items-center justify-between shadow-inner mt-1">
+<div class="flex flex-col">
+<span class="font-label-mono text-label-mono text-text-secondary uppercase tracking-wider">Total Due</span>
+<span class="font-label-mono text-label-mono text-text-gold tracking-tight">৳225,750 BDT</span>
+</div>
+<div class="text-right">
+<span class="font-headline-md text-headline-md text-text-primary font-bold tracking-tight text-primary">$1,890.00</span>
+</div>
+</div>
+</div>
+<!-- Mobile Payment Method Selector -->
+<div class="bg-surface-card rounded-xl p-space-md shadow-md flex flex-col space-y-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary text-[18px]">account_balance_wallet</span>
+<span class="font-headline-sm text-headline-sm text-text-primary">Select Payment Method</span>
+</div>
+<span class="font-label-mono text-label-mono text-status-success flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">verified_user</span> SECURE
+      </span>
+</div>
+<div class="flex flex-col space-y-2" id="payment-options">
+<!-- Google Pay (Selected) -->
+<button class="payment-method-item w-full flex items-center justify-between p-3 rounded-lg bg-surface-elevated text-left transition-all duration-200 shadow-[0_0_12px_rgba(212,175,55,0.2)]" data-method="gpay" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-canvas flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-primary text-[20px]">phone_android</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-text-primary font-semibold">Google Pay</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Instant 1-Tap Checkout</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-primary flex items-center justify-center select-marker">
+<div class="w-2 h-2 rounded-full bg-surface-canvas"></div>
+</div>
+</button>
+<!-- Apple Pay -->
+<button class="payment-method-item w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-left transition-all duration-200" data-method="applepay" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-canvas flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">credit_card</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-text-primary">Apple Pay</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Biometric Touch ID / Face ID</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-canvas flex items-center justify-center select-marker"></div>
+</button>
+<!-- bKash Merchant -->
+<button class="payment-method-item w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-left transition-all duration-200" data-method="bkash" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-canvas flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-tertiary-fixed text-[20px]">payments</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center space-x-1.5">
+<span class="font-label-lg text-label-lg text-text-primary font-semibold">bKash Merchant</span>
+<span class="bg-primary/20 text-text-gold font-label-mono text-label-mono px-1.5 py-0.2 rounded">BD LOCAL</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">৳225,750 BDT • Instant SSLCommerz</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-canvas flex items-center justify-center select-marker"></div>
+</button>
+<!-- Credit / Debit Card (Stripe) -->
+<button class="payment-method-item w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-left transition-all duration-200" data-method="stripe" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-canvas flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">payment</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-text-primary">Credit / Debit Card</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Visa, Mastercard, Amex via Stripe</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-canvas flex items-center justify-center select-marker"></div>
+</button>
+<!-- PayPal -->
+<button class="payment-method-item w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-left transition-all duration-200" data-method="paypal" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-canvas flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">account_balance</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-text-primary">PayPal Express</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Global Escrow Protection</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-canvas flex items-center justify-center select-marker"></div>
+</button>
+<!-- UPI Instant -->
+<button class="payment-method-item w-full flex items-center justify-between p-3 rounded-lg bg-surface-container-low text-left transition-all duration-200" data-method="upi" type="button">
+<div class="flex items-center space-x-3">
+<div class="w-9 h-9 rounded-full bg-surface-canvas flex items-center justify-center text-text-primary">
+<span class="material-symbols-outlined text-text-secondary text-[20px]">qr_code_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-lg text-label-lg text-text-primary">UPI Instant Transfer</span>
+<span class="font-body-sm text-body-sm text-text-secondary">GPay, PhonePe, Paytm QR</span>
+</div>
+</div>
+<div class="w-5 h-5 rounded-full bg-surface-canvas flex items-center justify-center select-marker"></div>
+</button>
+</div>
+</div>
+<!-- Escrow Guarantee Guarantee Footnote -->
+<div class="flex items-center justify-center space-x-2 py-1 text-text-secondary">
+<span class="material-symbols-outlined text-primary text-[16px]">lock_clock</span>
+<span class="font-label-mono text-label-mono uppercase tracking-wider text-center">ApertureTube Verified Escrow • Instant Drive Release</span>
+</div>
+<!-- Sticky CTA Action Trigger -->
+<div class="sticky bottom-2 w-full pt-2 z-30">
+<button class="w-full bg-gradient-to-r from-text-gold to-primary-container text-surface-canvas font-headline-sm text-headline-sm font-bold py-3.5 px-4 rounded-xl flex items-center justify-center space-x-2 shadow-[0_4px_24px_rgba(212,175,55,0.4)] active:scale-[0.98] transition-transform" id="pay-button" type="button">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">lock_open</span>
+<span>Pay $1,890.00 &amp; Unlock Drive</span>
+</button>
+</div>
+<!-- Client-side script for payment pill interaction and simulated unlock feedback -->
+<script>
+    (function() {
+      const options = document.querySelectorAll('.payment-method-item');
+      options.forEach(btn => {
+        btn.addEventListener('click', () => {
+          options.forEach(el => {
+            el.classList.remove('bg-surface-elevated', 'shadow-[0_0_12px_rgba(212,175,55,0.2)]');
+            el.classList.add('bg-surface-container-low');
+            const marker = el.querySelector('.select-marker');
+            if (marker) {
+              marker.className = 'w-5 h-5 rounded-full bg-surface-canvas flex items-center justify-center select-marker';
+              marker.innerHTML = '';
+            }
+          });
+          btn.classList.remove('bg-surface-container-low');
+          btn.classList.add('bg-surface-elevated', 'shadow-[0_0_12px_rgba(212,175,55,0.2)]');
+          const marker = btn.querySelector('.select-marker');
+          if (marker) {
+            marker.className = 'w-5 h-5 rounded-full bg-primary flex items-center justify-center select-marker';
+            marker.innerHTML = '<div class="w-2 h-2 rounded-full bg-surface-canvas"></div>';
+          }
+        });
+      });
+
+      const payBtn = document.getElementById('pay-button');
+      if (payBtn) {
+        payBtn.addEventListener('click', () => {
+          const original = payBtn.innerHTML;
+          payBtn.disabled = true;
+          payBtn.innerHTML = '<span class="material-symbols-outlined animate-spin text-[20px]">sync</span><span>Authorizing Escrow Vault...</span>';
+          setTimeout(() => {
+            payBtn.innerHTML = '<span class="material-symbols-outlined text-[20px]">check_circle</span><span>Drive Link Unlocked!</span>';
+            payBtn.classList.remove('from-text-gold', 'to-primary-container');
+            payBtn.classList.add('bg-status-success', 'text-text-primary');
+          }, 1800);
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-md text-label-md mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="community" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-md text-label-md mt-0.5">Community</span></a><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] transition-colors duration-200 text-primary" data-path="invoices" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-md text-label-md mt-0.5">Invoices</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-md text-label-md mt-0.5">Profile</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="client-portal" href="#"><span class="material-symbols-outlined text-[22px]">sensor_door</span><span class="font-label-md text-label-md mt-0.5">Portal</span></a></div></nav></body></html>

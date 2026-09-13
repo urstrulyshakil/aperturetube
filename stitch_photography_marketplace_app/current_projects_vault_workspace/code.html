@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "outline-variant": "#4d4635", "secondary-fixed": "#ffe087", "text-secondary": "#9CA3AF", "background": "#11131a", "on-tertiary": "#412d00", "status-warning": "#F59E0B", "primary-container": "#d4af37", "on-secondary-fixed": "#231b00", "tertiary-fixed": "#ffdea6", "secondary": "#e1c46e", "on-tertiary-fixed": "#271900", "text-primary": "#F4F5F7", "surface-canvas": "#0B0C10", "inverse-primary": "#735c00", "border-gold-glow": "rgba(212, 175, 55, 0.35)", "status-success": "#10B981", "primary": "#f2ca50", "secondary-fixed-dim": "#e1c46e", "surface-card": "#14161D", "on-error": "#690005", "surface-container": "#1d1f27", "tertiary-fixed-dim": "#f4be53", "status-error": "#EF4444", "on-tertiary-fixed-variant": "#5e4200", "on-background": "#e2e2ec", "on-surface-variant": "#d0c5af", "border-subtle": "#282C3D", "on-primary-container": "#554300", "on-secondary": "#3c2f00", "on-secondary-container": "#e1c46e", "on-tertiary-container": "#5b4000", "on-primary-fixed-variant": "#574500", "on-primary-fixed": "#241a00", "surface-tint": "#e9c349", "inverse-surface": "#e2e2ec", "primary-fixed": "#ffe088", "secondary-container": "#655000", "tertiary-container": "#deaa41", "surface-container-lowest": "#0c0e15", "surface-elevated": "#1C1F2B", "tertiary": "#fdc659", "surface-variant": "#33343c", "error": "#ffb4ab", "surface-container-low": "#191b22", "inverse-on-surface": "#2e3038", "on-primary": "#3c2f00", "on-secondary-fixed-variant": "#574500", "outline": "#99907c", "on-error-container": "#ffdad6", "error-container": "#93000a", "on-surface": "#e2e2ec", "text-gold": "#F5D77F", "primary-fixed-dim": "#e9c349", "surface-container-high": "#282a31", "surface": "#11131a", "surface-bright": "#373941", "surface-dim": "#11131a", "surface-container-highest": "#33343c" }, borderRadius: { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, spacing: { "gutter-mobile": "0.75rem", "margin-mobile": "1rem", "space-xl": "2.5rem", "margin": "3rem", "space-md": "1rem", "space-xs": "0.25rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-2xl": "4rem", "space-lg": "1.5rem" }, fontFamily: { "label-mono": ["JetBrains Mono"], "body-sm": ["Inter"], "label-lg": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "display-mobile": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-lg": ["Inter"], "display": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "body-md": ["Inter"], "label-md": ["Inter"], "headline-sm": ["Plus Jakarta Sans"] }, fontSize: { "label-mono": ["11px", { lineHeight: "16px", letterSpacing: "0.08em", fontWeight: "500" }], "body-sm": ["13px", { lineHeight: "20px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "20px", letterSpacing: "0.02em", fontWeight: "600" }], "headline-lg-mobile": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "700" }], "display-mobile": ["36px", { lineHeight: "44px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.02em", fontWeight: "700" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "display": ["56px", { lineHeight: "64px", letterSpacing: "-0.03em", fontWeight: "700" }], "headline-md": ["28px", { lineHeight: "36px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }], "headline-sm": ["20px", { lineHeight: "28px", letterSpacing: "0em", fontWeight: "600" }] } } } };</script><style>@layer base { html, body { width: 100vw; min-height: 100%; margin: 0; padding: 0; background-color: #0c0e15; } body { overscroll-behavior-y: none; -webkit-tap-highlight-color: transparent; } .pb-safe { padding-bottom: env(safe-area-inset-bottom, 0px); } .pt-safe { padding-top: env(safe-area-inset-top, 0px); } main > :first-child { margin-top: 0 !important; } main > :last-child { margin-bottom: 0 !important; } } ::-webkit-scrollbar { display: none; }</style></head><body class="bg-surface-container-lowest text-on-surface font-body-md text-body-md flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(0,0,0,0.4)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="w-9 h-9 rounded-full flex items-center justify-center bg-surface-elevated shadow-[0_0_12px_rgba(212,175,55,0.15)]"><span class="material-symbols-outlined text-primary text-xl">camera</span></div><div class="flex flex-col"><div class="flex items-center gap-space-xs"><span class="font-headline-sm text-headline-sm font-bold text-text-primary tracking-tight leading-none">Aperture<span class="text-primary">Tube</span></span></div><span class="font-label-mono text-label-mono text-text-gold tracking-widest uppercase opacity-80 mt-0.5">Capturing Memories</span></div></div><div class="flex items-center gap-space-xs"><span class="hidden font-label-md text-label-md text-on-surface-variant font-medium tracking-wide">Projects</span><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_0_8px_rgba(212,175,55,0.25)]" src="https://lh3.googleusercontent.com/aida/AEtjO1W2d40aK4i2E3OdQabT3q2MX50QbYaBikw3sAiiNICxgg5kC9Q_9BFpBK5phvLLC2Ds0r2o0yI0_gYhzO9H2dQTP807oFA_V6cAhVfPk6AR1nOlU_dHgWuog7jbVj45B3DrmJ1LVtFB9_ujFQ_2Qs1tggkQ5gDCtFA-vN-LwjLqob6tt3QJFr2HHS8viGp25fiSeXQNonm8-mhL5iR73VrkyDsgFq0-eja2qRX2lTbatHOT58mTs1AaMfltDpZDVZqAlMjI6lyBgg"/></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-24 bg-surface-container-lowest"><div class="flex flex-col w-full pb-8">
+<!-- Subtle Ambient Glow Element -->
+<div class="fixed top-12 left-1/2 -translate-x-1/2 w-72 h-36 bg-primary/10 rounded-full blur-[70px] pointer-events-none -z-10"></div>
+<!-- Mobile Workspace Header & Philosophy -->
+<section class="px-margin-mobile pt-2 pb-3">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[18px]" style="font-variation-settings: 'FILL' 1;">camera_roll</span>
+<span class="font-label-mono text-label-mono text-text-gold uppercase tracking-widest">Vault Directory</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-text-primary tracking-tight mt-0.5">Projects &amp; Master Vault</h1>
+</div>
+<button aria-label="Vault Notifications" class="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center text-secondary shadow-md active:scale-95 transition-transform">
+<span class="material-symbols-outlined text-[20px]">notifications_none</span>
+</button>
+</div>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 max-w-xs">Capturing Memories with optical precision. Track high-res masters, curations, and client vault handoffs.</p>
+</section>
+<!-- 2x2 Quick Metrics Bento Grid -->
+<section class="px-margin-mobile mt-2">
+<div class="grid grid-cols-2 gap-space-sm">
+<!-- Metric 1 -->
+<div class="bg-surface-card rounded-xl p-3.5 flex flex-col justify-between shadow-sm relative overflow-hidden group">
+<div class="absolute -right-2 -bottom-2 w-12 h-12 bg-primary/5 rounded-full blur-lg pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-primary text-[18px]">photo_library</span>
+<span class="font-label-mono text-[10px] text-text-secondary uppercase">Active</span>
+</div>
+<div class="mt-2.5">
+<div class="font-headline-md text-headline-md font-bold text-text-primary leading-none">04</div>
+<div class="font-body-sm text-body-sm text-text-secondary mt-1">Live Shoots</div>
+</div>
+</div>
+<!-- Metric 2 -->
+<div class="bg-surface-card rounded-xl p-3.5 flex flex-col justify-between shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-status-warning text-[18px]" style="font-variation-settings: 'FILL' 1;">touch_app</span>
+<span class="inline-flex items-center gap-1 font-label-mono text-[10px] text-status-warning bg-status-warning/10 px-1.5 py-0.5 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-status-warning animate-pulse"></span>
+            Action
+          </span>
+</div>
+<div class="mt-2.5">
+<div class="font-headline-md text-headline-md font-bold text-text-primary leading-none">02</div>
+<div class="font-body-sm text-body-sm text-text-secondary mt-1">Client Curations</div>
+</div>
+</div>
+<!-- Metric 3 -->
+<div class="bg-surface-card rounded-xl p-3.5 flex flex-col justify-between shadow-sm">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-status-success text-[18px]">verified</span>
+<span class="font-label-mono text-[10px] text-status-success uppercase font-semibold">Tier 1</span>
+</div>
+<div class="mt-2.5">
+<div class="font-headline-md text-headline-md font-bold text-text-primary leading-none">01</div>
+<div class="font-body-sm text-body-sm text-text-secondary mt-1">Ready for Handoff</div>
+</div>
+</div>
+<!-- Metric 4 -->
+<div class="bg-surface-card rounded-xl p-3.5 flex flex-col justify-between shadow-sm bg-gradient-to-br from-surface-card via-surface-card to-primary/10">
+<div class="flex items-center justify-between">
+<span class="material-symbols-outlined text-text-gold text-[18px]">lock_clock</span>
+<span class="font-label-mono text-[10px] text-text-gold uppercase">Escrow</span>
+</div>
+<div class="mt-2.5">
+<div class="font-headline-md text-headline-md font-bold text-text-gold leading-none">$2,450</div>
+<div class="font-body-sm text-body-sm text-text-secondary mt-1">Secured Balance</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Filter Pills Carousel -->
+<section class="mt-5 px-margin-mobile">
+<div class="flex items-center gap-space-xs overflow-x-auto pb-1.5 scrollbar-none" id="project-filters">
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-primary text-on-primary font-label-md text-label-md font-semibold tracking-wide whitespace-nowrap shadow-[0_0_12px_rgba(212,175,55,0.35)] transition-all" data-filter="all">
+        All (4)
+      </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-elevated text-text-secondary font-label-md text-label-md tracking-wide whitespace-nowrap transition-colors hover:text-text-gold" data-filter="in-progress">
+        In-Progress (1)
+      </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-elevated text-text-secondary font-label-md text-label-md tracking-wide whitespace-nowrap transition-colors hover:text-text-gold" data-filter="selection">
+        Selection (1)
+      </button>
+<button class="filter-pill px-3.5 py-1.5 rounded-full bg-surface-elevated text-text-secondary font-label-md text-label-md tracking-wide whitespace-nowrap transition-colors hover:text-text-gold" data-filter="delivered">
+        Delivered (1)
+      </button>
+</div>
+</section>
+<!-- Project Cards Stack -->
+<section class="mt-4 px-margin-mobile flex flex-col gap-space-md">
+<!-- PROJECT 1: Royal Bengal Wedding -->
+<article class="project-card bg-surface-card rounded-xl p-4 shadow-md transition-all duration-200" data-category="selection">
+<!-- Top Title & Badge -->
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-status-warning animate-pulse"></span>
+<span class="font-label-mono text-label-mono text-status-warning uppercase">Proofing Stage</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold truncate mt-1">Royal Bengal Wedding</h2>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">Sarah &amp; Farhan • Ceremony &amp; Reception</p>
+</div>
+<button aria-label="Options" class="w-8 h-8 rounded-full bg-surface-elevated text-text-secondary flex items-center justify-center active:bg-surface-bright">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Proofing Progress Bar -->
+<div class="mt-3.5 bg-surface-container rounded-lg p-2.5">
+<div class="flex items-center justify-between font-label-mono text-label-mono text-text-gold mb-1.5">
+<span>Client Selection</span>
+<span class="font-bold">120 / 150 Picked</span>
+</div>
+<div class="w-full h-1.5 bg-surface-elevated rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-primary to-secondary rounded-full" style="width: 80%;"></div>
+</div>
+</div>
+<!-- Filmstrip Thumbnails Row -->
+<div class="mt-3.5">
+<div class="flex items-center justify-between mb-1.5 font-label-mono text-[10px] text-text-secondary uppercase">
+<span>Live Proofing Stream</span>
+<span class="text-text-gold">Raw Bayer Preview</span>
+</div>
+<div class="grid grid-cols-3 gap-2">
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-canvas shadow-inner">
+<img class="w-full h-full object-cover" data-alt="South Asian bride draped in opulent crimson and gold zardozi lehenga, shot in dramatic chiaroscuro low light with warm golden reflections and soft bokeh." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDo-mgltFhSyf4dSAKGOXOpsXGfPd594gOPpMOgtapAjKFwHaDu_qS_U6dCYJVu5IoBvxdiwx3zosExeFu7Th2evnSl3yKroDlCg7B5ovb_ZmCvHn1u5KWugZJJBsLgTpgDA_AKFI6V6W0Pt3DoUNIOtMgKbc-6OJbthtoE3mbLONjowhordzhCcTbDUikugiKIklyO1LKpDbxdBqQea-qPThCnHnLWb86ccoTy45w4Xy8D0YxHum67"/>
+<span class="absolute bottom-1 right-1 bg-surface-canvas/80 backdrop-blur-sm px-1 rounded font-label-mono text-[9px] text-text-gold">#042</span>
+</div>
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-canvas shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Intimate portrait of bride and groom holding hands decorated with intricate henna mehndi, vintage gold bridal jewelry, Hasselblad medium format cinematic tone." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDEZ-X0DsC426gjuWNA40MoCt5HSWPKcgw-EADAcWEW2wZeyybHLfW314bCn1OE856zHv-kn4wMlfL2RM1cNLmtWft1mjL47S8f5H7F0AzJQLFvPC2wyt4J1KzEKsCCLaO5-841k9-D-uZGSv6NEs8xbl1jNbRbgzhiH9u8Y65gM2523LOX-TGUywT_fxBXCaFrYAqDQ5wpKKlkzKScxJRs-sIV_09TeQz-cPvpERYTO-TwjOaxd9NT"/>
+<span class="absolute bottom-1 right-1 bg-surface-canvas/80 backdrop-blur-sm px-1 rounded font-label-mono text-[9px] text-text-gold">#088</span>
+</div>
+<div class="relative aspect-[4/3] rounded-lg overflow-hidden bg-surface-canvas shadow-inner flex items-center justify-center">
+<img class="w-full h-full object-cover" data-alt="Grand royal wedding hall illuminated by ornate crystal chandeliers and golden candlelight, guests cheering under ambient atmospheric amber glow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIhdVgtomlU4lQ_OV9m2cYmCJI1sjBt6yzW2pStUCNdrA9H81iW29GaNetGHnDobk2izah_sQcrxFVo-c8aOALfvWNhul7pVU4LkKXa93mxi9lEXzfccZQQDRN6fdiU7BVjHEIydOTkL6r7CVa_QPVAvtSao7twXndHJU0I0PL9pARKVrK7pLbEN1XfQQlLLQLV1YikXD29wgFLNA1G0tLn52V5t_oos8pqGqDPfaU4ahDZRVmdJny"/>
+<div class="absolute inset-0 bg-surface-canvas/60 backdrop-blur-[2px] flex flex-col items-center justify-center">
+<span class="font-headline-sm text-headline-sm text-text-gold font-bold">+28</span>
+<span class="font-label-mono text-[9px] text-text-secondary uppercase">Awaiting</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Quick Actions Strip -->
+<div class="mt-4 pt-3 flex items-center gap-2 overflow-x-auto scrollbar-none">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-elevated text-text-gold font-label-lg text-label-lg font-semibold flex items-center justify-center gap-1.5 active:scale-98 transition-transform shadow-sm">
+<span class="material-symbols-outlined text-[18px]">folder_open</span>
+<span>Open Vault</span>
+</button>
+<button class="py-2 px-3 rounded-lg bg-surface-elevated text-text-primary font-label-lg text-label-lg flex items-center justify-center gap-1 active:bg-surface-bright transition-colors" title="Fast Pass QR">
+<span class="material-symbols-outlined text-[18px] text-primary">qr_code_2</span>
+<span class="font-body-sm text-body-sm">QR Pass</span>
+</button>
+<button class="w-9 h-9 rounded-lg bg-surface-elevated text-text-secondary flex items-center justify-center active:text-text-primary" title="Send Invoice">
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</div>
+</article>
+<!-- PROJECT 2: Aura Luxury Fashion Campaign FW25 -->
+<article class="project-card bg-surface-card rounded-xl p-4 shadow-md transition-all duration-200 relative overflow-hidden" data-category="delivered">
+<!-- Subtle Luxury Gilt Accent Ribbon -->
+<div class="absolute top-0 right-0 w-28 h-28 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<!-- Top Title & Badge -->
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-status-warning/15 font-label-mono text-label-mono text-status-warning font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span>
+              Vault Locked
+            </span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold truncate mt-1">Aura Luxury Fashion FW25</h2>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">Milan Studio Staging • Haute Couture Editorial</p>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-elevated flex items-center justify-center text-text-gold shadow-[0_0_12px_rgba(212,175,55,0.25)]">
+<span class="material-symbols-outlined text-[20px]" style="font-variation-settings: 'FILL' 1;">shield_with_heart</span>
+</div>
+</div>
+<!-- Campaign Visual Banner -->
+<div class="mt-3.5 relative rounded-lg overflow-hidden aspect-[21/9] bg-surface-canvas shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High-fashion model in sculptural metallic gold couture jacket posing inside brutalist concrete studio, crisp razor-sharp strobe rim lighting, rich charcoal shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBKw1q1oC7J0KYcvDsuerlskKBsYeh-QXNYyF4cRHwwf7X78KglPkQ8dbZyWoBB-YKQEzQZkLOX8q8hVx35Ftyv0MKf3Mji5fvqEGaEi6rSB43hbvpaHBKU_2kAz66qX1NmpavnTBmrWQzu_iOTzB2z8D7kjX6GRNgaPGgUMLCWzzyrwJbpcUXN6QzgHxBSMBUajFBw2XGa_QK1P_5Zxb6oYlO_RYoCmjHecXk7OAK_FRNamUrYuNc"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-canvas/90 via-surface-canvas/40 to-transparent flex items-end p-2.5">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified_user</span>
+<span class="font-label-mono text-label-mono text-text-primary">120 Master 16-bit TIFFs Ready</span>
+</div>
+</div>
+</div>
+<!-- Financial Escrow Settlement Box -->
+<div class="mt-3.5 bg-surface-container rounded-lg p-3 flex items-center justify-between">
+<div>
+<div class="font-label-mono text-[10px] text-text-secondary uppercase">Escrow Handoff Fee</div>
+<div class="font-headline-sm text-headline-sm text-text-gold font-bold">$2,450.00</div>
+</div>
+<div class="text-right">
+<div class="font-label-mono text-[10px] text-status-warning uppercase">Status</div>
+<div class="font-label-lg text-label-lg text-text-primary font-medium">Payment Pending</div>
+</div>
+</div>
+<!-- Master Action Button -->
+<div class="mt-3.5">
+<button class="w-full py-2.5 px-4 rounded-lg bg-gradient-to-r from-primary to-secondary text-on-primary font-label-lg text-label-lg font-bold flex items-center justify-center gap-2 shadow-[0_0_18px_rgba(212,175,55,0.35)] active:scale-[0.99] transition-transform">
+<span class="material-symbols-outlined text-[20px]">key</span>
+<span>Unlock &amp; Settle Escrow</span>
+</button>
+</div>
+</article>
+<!-- PROJECT 3: Automotive Editorial - Porsche 911 GT3 -->
+<article class="project-card bg-surface-card rounded-xl p-4 shadow-md transition-all duration-200" data-category="in-progress">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary animate-ping"></span>
+<span class="font-label-mono text-label-mono text-primary uppercase font-semibold">Drive Sync Live</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold truncate mt-1">Automotive: 911 GT3 RS</h2>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">Sunset Track Session • Laguna Seca</p>
+</div>
+<button aria-label="Options" class="w-8 h-8 rounded-full bg-surface-elevated text-text-secondary flex items-center justify-center active:bg-surface-bright">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Visual Preview Staging -->
+<div class="mt-3.5 relative aspect-[16/9] rounded-lg overflow-hidden bg-surface-canvas shadow-inner">
+<img class="w-full h-full object-cover" data-alt="Glossy dark metallic supercar cornering at high speed on racetrack at dusk, headlights cutting through mist, long exposure cinematic motion blur, deep obsidian tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDSddQJpoo1Nl_V5m86BP0DZ2zP08e3sFq8if3H-FXGyg-QiXyScb46YrO-D80Az7flVS58kfmHvZr6rSMt8vO4OeujaaueMgJWZw1cAiojR5SQrGxemqYXbjQoauXwP8qGsj5zulxHhCsEd3zIM58jZ6JQhCdqoEeM8k4r2SCXzjrhBxRiku3g5ReGWnvO4j_VugJS44VB2-XRxFE8NKwLVXcQYGk1IVRolizqqfRdm5aCfm45r303"/>
+<div class="absolute top-2 left-2 bg-surface-canvas/80 backdrop-blur-md px-2 py-0.5 rounded font-label-mono text-[10px] text-text-gold flex items-center gap-1">
+<span class="material-symbols-outlined text-[12px]">palette</span>
+<span>Color Grading: 85%</span>
+</div>
+<div class="absolute bottom-2 right-2 bg-surface-canvas/90 backdrop-blur-md px-2 py-0.5 rounded font-label-mono text-[10px] text-status-success flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-status-success"></span>
+<span>Syncing 42.4 GB</span>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="mt-3.5 flex items-center gap-2">
+<button class="flex-1 py-2 px-3 rounded-lg bg-surface-elevated text-text-primary font-label-lg text-label-lg font-medium flex items-center justify-center gap-1.5 active:bg-surface-bright transition-colors">
+<span class="material-symbols-outlined text-[18px] text-secondary">cloud_done</span>
+<span>Inspect Drive Folder</span>
+</button>
+<button class="w-10 h-10 rounded-lg bg-surface-elevated text-text-gold flex items-center justify-center active:scale-95 transition-transform" title="EXIF Calibration Profile">
+<span class="material-symbols-outlined text-[20px]">tune</span>
+</button>
+</div>
+</article>
+<!-- PROJECT 4: Monochromatic Architectural Study (Delivered & Archived) -->
+<article class="project-card bg-surface-card rounded-xl p-4 shadow-md transition-all duration-200 opacity-90" data-category="delivered">
+<div class="flex items-start justify-between gap-2">
+<div class="min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-mono text-label-mono text-status-success uppercase font-semibold">Delivered &amp; Sealed</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-text-primary tracking-tight font-bold truncate mt-1">The Obsidian Monolith</h2>
+<p class="font-body-sm text-body-sm text-text-secondary truncate">Zaha Hadid Pavilion • Architectural Digest</p>
+</div>
+<span class="material-symbols-outlined text-status-success text-[20px]">check_circle</span>
+</div>
+<div class="mt-3 bg-surface-container rounded-lg p-2.5 flex items-center justify-between">
+<span class="font-body-sm text-body-sm text-text-secondary">Archived in Cold Storage Vault #09</span>
+<button class="font-label-mono text-label-mono text-text-gold uppercase tracking-wider font-semibold active:underline">Access</button>
+</div>
+</article>
+</section>
+<!-- Delightful Floating Action Button (FAB) -->
+<div class="fixed bottom-20 right-4 z-40">
+<button class="h-13 px-4 py-3 rounded-full bg-gradient-to-r from-primary via-primary-container to-secondary text-on-primary font-label-lg text-label-lg font-bold flex items-center gap-2 shadow-[0_6px_24px_rgba(212,175,55,0.45)] active:scale-95 transition-all duration-200" id="fab-create-vault">
+<div class="w-6 h-6 rounded-full bg-on-primary/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</div>
+<span class="pr-1 tracking-wide">New Project Vault</span>
+</button>
+</div>
+<!-- Interactive Client-side Script for Filtering & Micro-haptics -->
+<script>
+    (function() {
+      const filterButtons = document.querySelectorAll('.filter-pill');
+      const projectCards = document.querySelectorAll('.project-card');
+
+      filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const filter = btn.getAttribute('data-filter');
+
+          // Style update
+          filterButtons.forEach(b => {
+            b.classList.remove('bg-primary', 'text-on-primary', 'shadow-[0_0_12px_rgba(212,175,55,0.35)]', 'font-semibold');
+            b.classList.add('bg-surface-elevated', 'text-text-secondary');
+          });
+          btn.classList.remove('bg-surface-elevated', 'text-text-secondary');
+          btn.classList.add('bg-primary', 'text-on-primary', 'shadow-[0_0_12px_rgba(212,175,55,0.35)]', 'font-semibold');
+
+          // Filter cards with smooth opacity transition
+          projectCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (filter === 'all' || category === filter) {
+              card.style.display = 'block';
+              card.style.opacity = '0';
+              setTimeout(() => {
+                card.style.transition = 'opacity 0.2s ease-in-out';
+                card.style.opacity = '1';
+              }, 10);
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      });
+
+      // Micro interaction on FAB
+      const fab = document.getElementById('fab-create-vault');
+      if (fab) {
+        fab.addEventListener('click', () => {
+          const originalText = fab.querySelector('span:last-child').textContent;
+          fab.querySelector('span:last-child').textContent = 'Opening Iris...';
+          setTimeout(() => {
+            fab.querySelector('span:last-child').textContent = originalText;
+          }, 1200);
+        });
+      }
+    })();
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-primary"><div class="flex justify-around items-center h-16 px-gutter-mobile"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] transition-colors duration-200 text-primary" data-path="projects" href="#"><span class="material-symbols-outlined text-[22px]">photo_library</span><span class="font-label-md text-label-md mt-0.5">Projects</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="community" href="#"><span class="material-symbols-outlined text-[22px]">auto_awesome</span><span class="font-label-md text-label-md mt-0.5">Community</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="invoices" href="#"><span class="material-symbols-outlined text-[22px]">receipt_long</span><span class="font-label-md text-label-md mt-0.5">Invoices</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="profile" href="#"><span class="material-symbols-outlined text-[22px]">account_circle</span><span class="font-label-md text-label-md mt-0.5">Profile</span></a><a class="flex flex-col items-center justify-center min-w-[54px] min-h-[44px] text-text-secondary transition-colors duration-200" data-path="client-portal" href="#"><span class="material-symbols-outlined text-[22px]">sensor_door</span><span class="font-label-md text-label-md mt-0.5">Portal</span></a></div></nav></body></html>
