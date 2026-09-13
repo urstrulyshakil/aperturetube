@@ -49,6 +49,8 @@ echo "=================================================="
 
 # 2. Launch Flutter App
 cd "$ROOT_DIR"
-echo "📱 Launching Flutter Client..."
-flutter run -d chrome
+MODE="${1:---release}"
+echo "📱 Launching Flutter Client ($MODE)..."
+flutter run -d chrome "$MODE"
+
 
