@@ -32,11 +32,12 @@ class AppState extends ChangeNotifier {
   DateTime? _settlementDate;
   String _settlementMethod = 'Google Pay';
 
-  // Studio Settings
-  DisplayLutMode _lutMode = DisplayLutMode.darkCinema;
+  // Studio Settings (Default: Daylight Studio cream & gold)
+  DisplayLutMode _lutMode = DisplayLutMode.daylightStudio;
   bool _autoSyncRaw = true;
   String _defaultCurrency = 'USD (\$)';
   String _payoutGateway = 'bKash Merchant (017•••••89)';
+
 
   // Getters
   Set<String> get selectedPhotoIds => _selectedPhotoIds;

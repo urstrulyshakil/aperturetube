@@ -11,13 +11,14 @@ void main() {
   SystemChrome.setSystemUIOverlayStyle(
     const SystemUiOverlayStyle(
       statusBarColor: Colors.transparent,
-      statusBarIconBrightness: Brightness.light,
-      systemNavigationBarColor: Color(0xFF0C0E15),
-      systemNavigationBarIconBrightness: Brightness.light,
+      statusBarIconBrightness: Brightness.dark,
+      systemNavigationBarColor: Color(0xFFFAF7F0),
+      systemNavigationBarIconBrightness: Brightness.dark,
     ),
   );
   runApp(const ApertureTubeApp());
 }
+
 
 /// Root app — StatefulWidget so we can safely listen to AppState
 /// without wrapping MaterialApp in AnimatedBuilder (causes mouse_tracker assertion on Web).
