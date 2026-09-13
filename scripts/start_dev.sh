@@ -23,7 +23,10 @@ cleanup() {
 }
 trap cleanup SIGINT SIGTERM EXIT
 
-# 1. Start FastAPI Backend in background
+# 1. Clean up port 8000 if already bound
+lsof -ti :8000 | xargs kill -9 2>/dev/null || true
+
+# Start FastAPI Backend in background
 echo "🚀 Starting FastAPI Backend at http://localhost:8000..."
 cd "$BACKEND_DIR"
 if [ -d ".venv" ]; then
@@ -47,4 +50,5 @@ echo "=================================================="
 # 2. Launch Flutter App
 cd "$ROOT_DIR"
 echo "📱 Launching Flutter Client..."
-flutter run -d chrome --web-renderer canvaskit
+flutter run -d chrome
+
