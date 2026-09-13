@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import '../models/studio_settings.dart';
+import '../services/api_service.dart';
 
 class AppState extends ChangeNotifier {
   static final AppState _instance = AppState._internal();
   factory AppState() => _instance;
   AppState._internal();
+
+  final ApiService _api = ApiService();
 
   // Selected Photos for Curation
   final Set<String> _selectedPhotoIds = {
@@ -47,33 +50,58 @@ class AppState extends ChangeNotifier {
   bool get autoSyncRaw => _autoSyncRaw;
   String get defaultCurrency => _defaultCurrency;
   String get payoutGateway => _payoutGateway;
+  ApiService get api => _api;
 
-  // Actions
+  // Actions with Backend Synchronization
   void togglePhotoSelection(String photoId) {
-    if (_selectedPhotoIds.contains(photoId)) {
-      _selectedPhotoIds.remove(photoId);
-    } else {
+    final willSelect = !_selectedPhotoIds.contains(photoId);
+    if (willSelect) {
       _selectedPhotoIds.add(photoId);
+    } else {
+      _selectedPhotoIds.remove(photoId);
     }
     notifyListeners();
+
+    // Sync to FastAPI backend asynchronously
+    _api.updatePhotoStatus(
+      projectId: 'proj_01',
+      photoId: photoId,
+      isSelected: willSelect,
+    );
   }
 
   void toggleFavorite(String photoId) {
-    if (_favoriteIds.contains(photoId)) {
-      _favoriteIds.remove(photoId);
-    } else {
+    final willFav = !_favoriteIds.contains(photoId);
+    if (willFav) {
       _favoriteIds.add(photoId);
+    } else {
+      _favoriteIds.remove(photoId);
     }
     notifyListeners();
+
+    // Sync to FastAPI backend asynchronously
+    _api.updatePhotoStatus(
+      projectId: 'proj_01',
+      photoId: photoId,
+      isFavorite: willFav,
+    );
   }
 
   void toggleRetouch(String photoId) {
-    if (_retouchRequestedIds.contains(photoId)) {
-      _retouchRequestedIds.remove(photoId);
-    } else {
+    final willRetouch = !_retouchRequestedIds.contains(photoId);
+    if (willRetouch) {
       _retouchRequestedIds.add(photoId);
+    } else {
+      _retouchRequestedIds.remove(photoId);
     }
     notifyListeners();
+
+    // Sync to FastAPI backend asynchronously
+    _api.updatePhotoStatus(
+      projectId: 'proj_01',
+      photoId: photoId,
+      isRetouchRequested: willRetouch,
+    );
   }
 
   void toggleArtisanBookmark(String artisanId) {
@@ -112,3 +140,4 @@ class AppState extends ChangeNotifier {
     notifyListeners();
   }
 }
+
